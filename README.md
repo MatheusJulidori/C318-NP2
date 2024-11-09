@@ -7,8 +7,8 @@ Este projeto visa analisar o desempenho de projetos de software a partir de um c
 ## Objetivo do Projeto
 
 1. **Avaliar Desempenho**: Calcular o desempenho dos projetos utilizando duas variáveis concretas:
-   - **FunctionalSize**: O tamanho funcional do projeto, que reflete a complexidade e o escopo do trabalho.
-   - **ProjectElapsedTime**: O tempo de execução do projeto, uma métrica direta de eficiência.
+   - **FunctionalSize**: O tamanho funcional do projeto, que reflete a complexidade e o escopo do trabalho. Medido em pontos de função.
+   - **ProjectElapsedTime**: O tempo de execução do projeto, uma métrica direta de eficiência. Medido em meses.
 
 2. **Correlação entre Tamanho e Tempo**: Através da correlação entre o tamanho do projeto (FunctionalSize) e o tempo de execução (ProjectElapsedTime), é possível quantificar o desempenho do projeto. Projetos que alcançam um tempo de execução menor para um tamanho funcional maior são considerados de desempenho mais eficiente.
 
