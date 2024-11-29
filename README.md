@@ -1,19 +1,95 @@
-# Comparação das Metodologias TDD e BDD: Análise de bugs detectados nas diferentes fases do projeto
+# Comparação das Metodologias TDD e BDD: Análise de Bugs Detectados nas Diferentes Fases do Projeto
 
-## Qual metodologia (TDD ou BDD) é mais eficaz na detecção de bugs durante o desenvolvimento e a produção?
+Este projeto foi desenvolvido como parte da disciplina **C318 - Fundamentos de Machine Learning** no curso de Engenharia da Computação no Instituto Nacional de Telecomunicações (Inatel). O objetivo do projeto é realizar uma análise comparativa das metodologias **Test-Driven Development (TDD)** e **Behavior-Driven Development (BDD)**, avaliando a detecção de bugs em diferentes fases do desenvolvimento de um projeto computacional.
 
-O CSV fornece dados sobre os bugs detectados em ambas as fases (desenvolvimento e produção) para as metodologias TDD e BDD. Isso permite comparar qual metodologia leva a uma maior detecção de erros em diferentes estágios.
-Como a cobertura de testes impacta a detecção de bugs?
+---
 
-A relação entre a cobertura de testes e o número de bugs detectados pode ser analisada para entender como investimentos em testes impactam diretamente a qualidade do código e a identificação de problemas.
-Quais fatores impactam o tempo de desenvolvimento em projetos utilizando TDD e BDD?
+## 🗂️ Estrutura do Projeto
 
-A análise do tempo de desenvolvimento em conjunto com a metodologia utilizada pode ajudar a entender se uma metodologia leva a um desenvolvimento mais rápido ou se há fatores que influenciam a eficiência do processo.
-Qual é a relação entre o tamanho da equipe e o número de bugs detectados ou o tempo de desenvolvimento?
+- **notebook/**
+  - Contém o Jupyter Notebook com os experimentos e análises.
+- **data/**
+  - Conjuntos de dados (dataset) utilizados nos experimentos.
+- **README.md**
+  - Este arquivo.
 
-A partir dos dados de tamanho da equipe, é possível explorar se equipes maiores estão correlacionadas a um aumento na detecção de bugs ou se afetam o tempo de desenvolvimento de forma significativa.
-Qual metodologia resulta em um melhor equilíbrio entre cobertura de testes e número de bugs detectados?
+---
 
-Com dados sobre cobertura de testes e detecção de bugs, é possível avaliar se há uma correlação entre uma maior cobertura de testes e uma menor quantidade de bugs detectados em cada metodologia.
+## 🎯 Objetivos do Projeto
 
+1. Realizar uma análise comparativa entre TDD e BDD, considerando os seguintes aspectos:
+   - Quantidade de bugs detectados.
+   - Fase do projeto em que os bugs foram encontrados.
+   - Qualidade e abrangência dos testes implementados.
+2. Avaliar os impactos de cada metodologia na produtividade e na qualidade do código desenvolvido.
 
+---
+
+## 📖 Etapas do Desenvolvimento
+
+### 1. Contextualização do Projeto
+Definimos como foco a comparação entre TDD e BDD para entender quais metodologias são mais eficazes em termos de detecção de bugs e alinhamento com os requisitos de negócio.
+
+### 2. Pesquisa e Enquadramento do Problema
+Formulamos as seguintes perguntas de negócio:
+- Qual metodologia detecta mais bugs em fases iniciais do projeto?
+- Existe diferença na quantidade total de bugs detectados entre TDD e BDD?
+
+O problema foi enquadrado como uma **análise exploratória de dados**, uma vez que nosso objetivo é compreender os padrões de detecção de bugs.
+
+### 3. Coleta de Dados
+Os dados foram coletados a partir de logs gerados durante o desenvolvimento de um projeto exemplo, aplicando ambas as metodologias (TDD e BDD) em paralelo.
+
+### 4. Desenvolvimento Computacional
+Implementamos scripts em Python para análise dos logs e geração de métricas como:
+- Tempo médio para correção de bugs.
+- Quantidade de bugs por fase do projeto.
+- Taxa de sucesso dos testes implementados.
+
+### 5. Geração de Resultados
+Os resultados foram visualizados utilizando gráficos e relatórios gerados no Jupyter Notebook. As métricas-chave foram apresentadas de forma clara e objetiva.
+
+---
+
+## 🚀 Resultados Obtidos
+
+- **Quantidade de Bugs Detectados:**
+  - TDD apresentou maior eficácia em fases iniciais.
+  - BDD detectou mais bugs relacionados a requisitos de negócio.
+- **Tempo de Correção:**
+  - Projetos com BDD apresentaram maior eficiência na correção devido à clareza dos cenários.
+
+Os resultados detalhados estão disponíveis no notebook em `notebook/TDDvsBDD.ipynb`.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Linguagem:** Python 3.9
+- **Bibliotecas:** pandas, matplotlib, pytest, behave
+- **Ferramentas:** Jupyter Notebook, Git, VS Code
+
+---
+
+## ✍️ Autores
+
+- Amanda Silva Guimarães
+- Manuela Gripp Silva
+- Maria Luiza Silva Raimundo
+- Matheus Henrique Braga Julidori
+
+---
+
+## 📋 Como Executar o Projeto
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/MatheusJulidori/C318-NP2.git
+
+2. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+
+3. Execute os notebooks ou scripts
+   ```bash
+   jupyter notebook notebook/TDDvsBDD.ipynb
